@@ -7,19 +7,15 @@ const Formulario = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-    if (nombre.trim().length < 3 || nombre.startsWith("")) {
-        alert("Datos enviados")
-        
-    } else{
-        alert("Por favor chequea que la información sea correcta");
-    }
-
-    if (color.length < 6 ){
-        alert("Datos enviados")
-    }
-    else{
-        alert("Por favor chequea que la información sea correcta");
-    }
+        if (
+            nombre.trim().length < 3 ||
+            album.trim().startsWith(' ') ||
+            album.length < 6
+        ) {
+            alert('Por favor chequea que la información sea correcta')
+        } else {
+            console.log('los datos fueron enviados correctamente')
+        }
 
     }
 
