@@ -9,8 +9,8 @@ const Formulario = () => {
         e.preventDefault()
         if (
             nombre.trim().length < 3 ||
-            album.trim().startsWith(' ') ||
-            album.length < 6
+            nombre.trim().startsWith(' ') ||
+            color.length < 6
         ) {
             alert('Por favor chequea que la información sea correcta')
         } else {
